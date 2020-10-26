@@ -4,8 +4,6 @@ import sys
 search = True
 argument = ""
 
-sys.argv += ["search", ".cz"]
-
 if len(sys.argv) > 1:
     if "search" in sys.argv:
         try:
