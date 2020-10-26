@@ -1,4 +1,4 @@
-# password-parsing
+# **password-parsing**
 
 ## Usage:
 ### g.py
@@ -7,4 +7,4 @@
 > python test3.py [--search searchterm]  
 
 
-if searchterm is not included test3 will find most frequent passwords
+**If searchterm is not included test3 will find most frequent passwords**
