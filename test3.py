@@ -34,7 +34,7 @@ def searchWord():
         for i in open(file, "r"):
             if argument in i: 
                 print(i.strip("\n"))
-
+eval
 print(argument)
 if __name__ == "__main__":
     if search:
