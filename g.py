@@ -58,7 +58,7 @@ for file in files:
                             if not ext in os.listdir(os.getcwd()+"/exts/"):
                                 os.mkdir(path+"/exts"+"/"+ext)
                             x = open("./exts/" + ext + "/output.txt", "a")
-                            x.write(i + "\n")
+                            x.write(i.strip() + "\n")
                             x.close()
                             print(i, end="")
                             #print(time.process_time())
@@ -73,7 +73,7 @@ for file in files:
                 try:
                     for x in re.findall("[a-zA-Z0-9]+@[a-zA-Z0-9]+\."+ext, f):
                         try:
-                            outputFile.write(x + "\n")
+                            outputFile.write(x.strip() + "\n")
                             print("{: <20.20} | {}".format(x.split("@")[0], time.process_time()))
                             #print(time.process_time())
                         except Exception as e: print("Can't write to ", outputFile); print(e)
